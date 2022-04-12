@@ -1,5 +1,31 @@
 This is a sample resturant API designed around REST. It mimics APIs for restaurant owners to manage table booking.
 --------------------------------------------------------------------------
+
+https://api.hathawayfood.com/restaurant/addTable/
+
+POST - Add table(s) to their restaurant by RestaurantOwner
+
+Parameters
+tableid: "string", table identifier
+
+--------------------------------------------------------------------------
+https://api.hathawayfood.com/restaurant/table/addTable/:tableId
+GET - Read table details
+
+--------------------------------------------------------------------------
+Cancel booking
+PUT
+https://api.hathawayfood.com/cancelBooking/id
+
+Users can cancel the booking status. 
+
+--------------------------------------------------------------------------
+https://api.hathawayfood.com/bookings/date
+GET - list all bookings of a given date
+
+Parameters
+date:"date", booking date and time
+--------------------------------------------------------------------------
 book a table
 POST
 https://api.hathawayfood.com/booktable
@@ -28,28 +54,3 @@ number: "string", number of people.
 time:"date", booking time
 email: "string", email address
 
---------------------------------------------------------------------------
-Cancel booking
-PUT
-https://api.hathawayfood.com/cancelBooking/id
-
-Users can cancel the booking status. 
-
---------------------------------------------------------------------------
-https://api.hathawayfood.com/bookings/date
-GET - list all bookings of a given date
-
-Parameters
-date:"date", booking date and time
-
---------------------------------------------------------------------------
-https://api.hathawayfood.com/restaurant/addTable/
-
-POST - Add table(s) to their restaurant by RestaurantOwner
-
-Parameters
-tableid: "string", table identifier
-
---------------------------------------------------------------------------
-https://api.hathawayfood.com/restaurant/table/addTable/:tableId
-GET - Read table details
